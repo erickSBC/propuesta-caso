@@ -10,7 +10,20 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
-
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 py-4 px-8 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
+        H
+      </div>
+      <span class="text-xl font-bold tracking-tight text-gray-900">
+        HIPLADE </span>
+    </div>
+    <div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
+      <a href="#" class="hover:text-blue-600 transition">Inicio</a>
+      <a href="#propuesta" class="hover:text-blue-600 transition">Propuesta</a>
+      <a href="#beneficios" class="hover:text-blue-600 transition">Beneficios</a>
+    </div>
+  </nav>
   <section class="relative h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
 
     <div class="absolute inset-0">
@@ -65,13 +78,13 @@
   </section>
 
   <!-- solucion -->
-  <section class="mx-16 py-16 px-8 bg-white">
+  <section class="mx-16 py-16 px-8 bg-white" id="propuesta">
     <div class="max-w-6xl mx-auto">
 
       <h2 class="text-3xl font-bold mb-6">Propuesta de Solución</h2>
 
       <p class="text-lg mb-10 leading-relaxed">
-        Se propone la implementación de una arquitectura moderna basada en virtualización y servidores de alta densidad
+        Se ofrece la implementación de una arquitectura moderna basada en virtualización y servidores de alta densidad
         tipo Blade, con el objetivo de consolidar servicios, optimizar el consumo energético y mejorar la administración
         de la infraestructura.
       </p>
@@ -134,7 +147,7 @@
   </section>
 
   <!-- beneficios -->
-  <section class="py-16 px-8 max-w-5xl mx-auto">
+  <section class="py-16 px-8 max-w-5xl mx-auto" id="beneficios">
     <h2 class="text-3xl font-bold mb-8">Beneficios Importantes</h2>
 
     <div class="grid md:grid-cols-3 gap-6">
