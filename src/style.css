@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply p-6 rounded-2xl transition duration-300 border border-gray-200 bg-white/70 backdrop-blur-md;
+}
+
+.card:hover {
+  @apply shadow-2xl -translate-y-2 scale-[1.02];
+}
+
+.benefit {
+  @apply p-6 bg-white rounded-2xl shadow-md text-center transition duration-300 border border-gray-100;
+}
+
+.benefit:hover {
+  @apply scale-105 shadow-xl;
+}
+.benefit h3 {
+  @apply font-semibold mt-2;
+}
+
+
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slide {
+  from {transform: translateY(20px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
