@@ -1,0 +1,234 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modernización TI</title>
+  <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 py-4 px-8 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
+        H
+      </div>
+      <span class="text-xl font-bold tracking-tight text-gray-900">
+        HIPLADE </span>
+    </div>
+    <div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
+      <a href="#" class="hover:text-blue-600 transition">Inicio</a>
+      <a href="#propuesta" class="hover:text-blue-600 transition">Propuesta</a>
+      <a href="#beneficios" class="hover:text-blue-600 transition">Beneficios</a>
+    </div>
+  </nav>
+  <section class="relative h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+
+    <div class="absolute inset-0">
+        <img 
+            src="https://storage.ghost.io/c/88/8e/888ee83c-deea-4c48-b67d-c73a5e01b5a9/content/images/2024/05/Infraestructura-de-TI.jpg" 
+            alt="Fondo de infraestructura" 
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="absolute w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl top-10 left-10"></div>
+    <div class="absolute w-[400px] h-[400px] bg-purple-500/20 rounded-full blur-3xl bottom-10 right-10"></div>
+
+    <div class="relative z-10 backdrop-blur-md bg-white/10 p-10 rounded-3xl shadow-xl border border-white/20">
+
+      <h1 class="text-4xl font-bold mb-4 text-white animate-fade">
+        Modernización de Infraestructura TI
+      </h1>
+
+      <p class="text-lg max-w-2xl text-white/90 animate-slide">
+        Consolidación de servidores mediante virtualización y tecnología Blade para mejorar eficiencia energética, orden
+        y escalabilidad.
+      </p>
+
+      <button id="btnScroll"
+        class="cursor-pointer mt-8 px-6 py-3 bg-white text-blue-600 rounded-xl shadow-lg hover:scale-110 hover:shadow-2xl transition duration-300">
+        Ver propuesta
+      </button>
+
+    </div>
+</section>
+
+  <!-- problema -->
+  <section class="py-16 px-8 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Situación Actual</h2>
+    <p class="text-lg leading-relaxed">
+      La entidad actualmente opera con una infraestructura compuesta por 15 servidores físicos dedicados a funciones
+      específicas como correo institucional, bases de datos de ciudadanos y gestión documental.
+
+      Esta arquitectura, además de ser rígida, presenta múltiples problemas críticos: un elevado consumo energético,
+      generación excesiva de calor, y un cableado desorganizado que dificulta las labores de mantenimiento y aumenta el
+      riesgo de fallos operativos.
+
+      Asimismo, el uso de hardware obsoleto limita la capacidad de respuesta ante nuevas demandas tecnológicas,
+      incrementa los tiempos de inactividad y genera costos operativos cada vez más altos sin un incremento proporcional
+      en el rendimiento.
+
+      En conjunto, esta situación evidencia la necesidad urgente de una transformación hacia una infraestructura más
+      eficiente, escalable y sostenible.
+    </p>
+  </section>
+
+  <!-- solucion -->
+  <section class="mx-16 py-16 px-8 bg-white" id="propuesta">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-3xl font-bold mb-6">Propuesta de Solución</h2>
+
+      <p class="text-lg mb-10 leading-relaxed">
+        Se ofrece la implementación de una arquitectura moderna basada en virtualización y servidores de alta densidad
+        tipo Blade, con el objetivo de consolidar servicios, optimizar el consumo energético y mejorar la administración
+        de la infraestructura.
+      </p>
+
+      <div class="space-y-10">
+
+        <!-- virtualización -->
+        <div class="card">
+          <h3 class="text-2xl font-semibold mb-3">⚙️ Virtualización mediante Hipervisor</h3>
+          <p class="mb-4">
+            La solución contempla la implementación de un hipervisor empresarial, que permitirá ejecutar múltiples
+            máquinas virtuales sobre un número reducido de servidores físicos.
+          </p>
+
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Consolidación de 15 servidores en 2 o 3 nodos físicos</li>
+            <li>Mejor utilización de CPU, memoria y almacenamiento</li>
+            <li>Reducción significativa del consumo energético</li>
+            <li>Disminución de la generación de calor</li>
+            <li>Mayor disponibilidad y recuperación ante fallos</li>
+            <li>Simplificación en la gestión de servicios</li>
+          </ul>
+        </div>
+
+        <!-- serv blade -->
+        <div class="card">
+          <h3 class="text-2xl font-semibold mb-3">🖥️ Infraestructura basada en Servidores Blade</h3>
+          <p class="mb-4">
+            Se propone la adopción de servidores Blade, que permiten integrar múltiples módulos de procesamiento en un
+            solo chasis.
+          </p>
+
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Reducción del espacio físico requerido</li>
+            <li>Componentes compartidos más eficientes (energía, ventilación y red)</li>
+            <li>Mayor orden y organización en el centro de datos</li>
+            <li>Escalabilidad modular para crecimiento futuro</li>
+          </ul>
+        </div>
+
+        <!-- Conectividad -->
+        <div class="card">
+          <h3 class="text-2xl font-semibold mb-3">🔌 Optimización de Conectividad</h3>
+          <p class="mb-4">
+            El uso de un backplane común dentro del chasis Blade permite centralizar las conexiones de red, energía y
+            almacenamiento.
+          </p>
+
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Eliminación del cableado excesivo</li>
+            <li>Infraestructura más ordenada y fácil de mantener</li>
+            <li>Reducción de errores físicos</li>
+            <li>Mayor confiabilidad operativa</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- beneficios -->
+  <section class="py-16 px-8 max-w-5xl mx-auto" id="beneficios">
+    <h2 class="text-3xl font-bold mb-8">Beneficios Importantes</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="benefit">
+  <div class="text-4xl mb-2">⚡</div>
+  <h3 class="text-lg font-semibold">Eficiencia Energética</h3>
+  <p class="text-sm text-gray-600 mt-2">
+    Reducción significativa del consumo eléctrico y mejora del PUE.
+  </p>
+</div>
+
+<div class="benefit">
+  <div class="text-4xl mb-2">🧩</div>
+  <h3 class="text-lg font-semibold">Escalabilidad</h3>
+  <p class="text-sm text-gray-600 mt-2">
+    Capacidad de crecimiento sin necesidad de grandes cambios físicos.
+  </p>
+</div>
+
+<div class="benefit">
+  <div class="text-4xl mb-2">🛠️</div>
+  <h3 class="text-lg font-semibold">Administración</h3>
+  <p class="text-sm text-gray-600 mt-2">
+    Gestión centralizada y simplificada de toda la infraestructura.
+  </p>
+</div>
+
+    </div>
+  </section>
+
+  <!-- impacto -->
+  <section class=" mx-16 py-16 px-8 bg-gradient-to-r from-blue-50 to-indigo-100">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-3xl font-bold mb-10 text-center">Impacto en la Organización</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 text-lg">
+
+        <div class="benefit">🔻 Reducción entre 60% y 70% del consumo energético</div>
+        <div class="benefit">🔻 Disminución significativa de la generación de calor</div>
+        <div class="benefit">📉 Mejora del indicador de eficiencia energética (PUE)</div>
+        <div class="benefit">📦 Optimización del uso del espacio físico</div>
+        <div class="benefit">⚙️ Simplificación de la administración TI</div>
+        <div class="benefit">🔒 Mayor disponibilidad de servicios críticos</div>
+        <div class="benefit">📈 Escalabilidad para crecimiento futuro</div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-20 text-center relative overflow-hidden bg-blue-900">
+
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5hyeOSbEqxTQ9j4Fc1nALs3HEPSAdmSJSw&s" 
+      alt="Fondo tecnológico" 
+      class="w-full h-full object-cover opacity-15 mix-blend-overlay"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r "></div>
+  </div>
+
+  <div class="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full top-0 left-1/2 -translate-x-1/2"></div>
+
+  <div class="relative z-10 px-6">
+    <h2 class="text-3xl font-bold mb-4 text-white">
+      Transforme su infraestructura tecnológica
+    </h2>
+
+    <p class="mb-6 text-lg max-w-xl mx-auto text-white/90">
+      Reduzca costos, optimice recursos y modernice su entorno TI con una solución escalable y eficiente.
+    </p>
+    
+    <button class="px-8 py-3 bg-white text-blue-600  rounded-full hover:bg-blue-50 transition-colors shadow-lg">
+        Contacto
+    </button>
+  </div>
+
+</section>
+
+</body>
+
+</html>
